@@ -3,6 +3,7 @@
 
 # In[1]:
 
+#Testing Save
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -154,7 +155,7 @@ o3d.io.write_triangle_mesh(output_path+"bpa_mesh.ply", dec_mesh)
 # In[ ]:
 
 
-#function creation
+#function creation to export mesh
 def lod_mesh_export(mesh, lods, extension, path):
     mesh_lods={}
     for i in lods:
@@ -168,7 +169,7 @@ def lod_mesh_export(mesh, lods, extension, path):
 # In[ ]:
 
 
-#execution of function
+#execution of function to export mesh
 my_lods = lod_mesh_export(bpa_mesh, [100000,50000,10000,1000,100], ".ply", output_path)
 
 
